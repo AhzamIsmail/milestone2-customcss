@@ -1,0 +1,119 @@
+/* General Styling for Contact Section */
+.contact-section {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .contact-grid {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .contact-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  .contact-text {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Flex styling for contact items */
+  .contact-flex {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  /* Contact Icon Styling */
+  .contact-flex svg {
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-flex svg:hover {
+    color: #0073e6; /* Color change on hover for icons */
+  }
+  
+  .contact-flex a {
+    color: #0073e6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-flex a:hover {
+    color: #005bb5; /* Darker shade on hover */
+  }
+  
+  /* Form Styling */
+  .contact-space {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form label {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .input-field, .textarea-field {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field:focus, .textarea-field:focus {
+    border-color: #0073e6;
+    outline: none;
+  }
+  
+  .textarea-field {
+    resize: vertical;
+  }
+  
+  /* Button Styling */
+  .button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0073e6;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Responsive Layout */
+  @media (min-width: 768px) {
+    .contact-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .contact-heading {
+      font-size: 2.5rem;
+    }
+  
+    .button {
+      width: auto;
+      align-self: flex-start;
+    }
+  }
+  

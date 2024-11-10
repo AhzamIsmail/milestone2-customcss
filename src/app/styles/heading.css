@@ -1,0 +1,46 @@
+/* Container styling */
+.heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #333; /* Dark background to highlight the heading */
+    border-bottom: 2px solid #555; /* Optional: subtle border for separation */
+  }
+  
+  /* Title styling */
+  .heading-title {
+    font-size: 2rem; /* Default size for medium screens */
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    animation: fadeInTitle 1s ease-in-out; /* Smooth fade-in animation */
+  }
+  
+  /* Fade-in animation for title */
+  @keyframes fadeInTitle {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .heading-title {
+      font-size: 1.5rem; /* Smaller size for mobile screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .heading-title {
+      font-size: 2.5rem; /* Larger size for desktops */
+    }
+  }
+  
